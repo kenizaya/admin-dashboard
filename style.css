@@ -9,7 +9,6 @@ body {
 
 .container {
     display: grid;
-    height: 100vh;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "sidebar header"
@@ -62,7 +61,8 @@ li a:hover {
     text-decoration: underline;
 }
 
-.pp {
+.pp,
+.user img {
     width: 40px;
     border-radius: 50%;
     justify-self: center;
@@ -141,5 +141,71 @@ button:active {
     color: #15a1ec;
 }
 
+.main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 0.9fr;
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 20px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: auto repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project {
+    border: 1px solid black;
+    width: 250px;
+    grid-row: 2 / 5;
+    grid-column: 1 / span 2;
+}
+
+.project > p {
+    font-variant: 400;
+}
+
+.announce {
+    grid-column: 4;
+}
+
+.announce-card,
+.user-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 2%;
+}
+
+.announce-card div h5,
+.announce-card div p{
+    margin: 2px;
+    font-size: 14px;
+}
+
+.announce-card div p {
+    font-size: 12px;
+}
+
+.announce-card div:nth-child(2) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 8px 0;
+    padding: 8px 0;
+}
 
 
+.user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    line-height: 2px;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.user p:first-child {
+    font-weight: bold;
+}
