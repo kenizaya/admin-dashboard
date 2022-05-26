@@ -5,6 +5,7 @@ body {
     padding: 0;
     font-family: Roboto, sans-serif;
     font-weight: bold;
+    color: #323F4B;
 }
 
 .container {
@@ -33,13 +34,13 @@ body {
 }
 
 .sidebar {
-    background-color: #15a1ec;
+    background-color: #19216C;
     grid-area: sidebar;
     display: grid;
 }
 
 .main {
-    background-color: #cccccc;
+    background-color: #E4E7EB;
     grid-area: main;
 }
 
@@ -125,7 +126,7 @@ input {
 }
 
 button {
-    background-color: #15a1ec;
+    background-color: #19216C;
     border: none;
     border-radius: 60px;
     margin: 15px;
@@ -138,7 +139,7 @@ button {
 
 button:active {
     background-color: white;
-    color: #15a1ec;
+    color: #19216C;
 }
 
 .main {
@@ -163,7 +164,7 @@ button:active {
 }
 
 .project {
-    border-left: 7px solid #15a1ec;
+    border-left: 7px solid #3E4C59;
     border-radius: 8px;
     width: 80%;
     padding: 20px;
@@ -180,6 +181,7 @@ button:active {
 .project > p {
     font-variant: 400;
     margin: 0;
+    color: #3E4C59;
 }
 
 .project .project-icons {
