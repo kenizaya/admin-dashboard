@@ -45,6 +45,12 @@ body {
 .main {
     background-color: #E4E7EB;
     grid-area: main;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    font-weight: normal;
+    font-size: 14px;
 }
 
 .icon-elements {
@@ -150,13 +156,7 @@ button:active {
 }
 
 .main {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    font-weight: normal;
-    font-size: 14px;
-    height: 100vh;
+    
 }
 
 .projects {
