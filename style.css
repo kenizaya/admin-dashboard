@@ -78,6 +78,10 @@ li a:hover {
     justify-self: center;
 }
 
+.user img {
+    border: 4px solid #19216C;
+}
+
 .first-head {
     display: grid;
     grid-template-columns: auto 3fr 2fr;
@@ -153,10 +157,6 @@ button:hover {
 button:active {
     background-color: #F5F7FA;
     color: #19216C;
-}
-
-.main {
-    
 }
 
 .projects {
