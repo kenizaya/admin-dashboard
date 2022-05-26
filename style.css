@@ -6,6 +6,7 @@ body {
     font-family: Roboto, sans-serif;
     font-weight: bold;
     color: #1F2933;
+    line-height: 1.5;
 }
 
 .container {
@@ -24,7 +25,8 @@ body {
 .header {
     background-color: #F5F7FA;
     grid-area: header;
-    box-shadow: 0px 200px #1F2933;
+    margin-bottom: 3px;
+    box-shadow: 0px 3px #CBD2D9;
 }
 
 .header-elements {
@@ -138,6 +140,10 @@ button {
 
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 button:active {
     background-color: #F5F7FA;
     color: #19216C;
@@ -157,7 +163,7 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(3, 1fr);
-    height: 90%;
+    height: 97%;
 }
 
 .projects h3 {
@@ -167,9 +173,10 @@ button:active {
 .project {
     border-left: 7px solid #3E4C59;
     border-radius: 8px;
+    box-shadow: 2px 3px #CBD2D9;
     width: 80%;
     padding: 20px;
-    height: 150px;
+    height: 170px;
     background-color: #F5F7FA;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -203,6 +210,7 @@ button:active {
     padding: 30px;
     border-radius: 2%;
     margin-bottom: 40px;
+    box-shadow: 2px 3px #CBD2D9;
 }
 
 .announce-card div h5,
@@ -214,6 +222,7 @@ button:active {
 .announce-card div p {
     font-size: 0.8rem;
     color: #3E4C59;
+    
 }
 
 .announce-card div:nth-child(2) {
@@ -221,6 +230,7 @@ button:active {
     border-bottom: 1px solid #9AA5B1;
     margin: 8px 0;
     padding: 8px 0;
+    
 }
 
 
@@ -240,4 +250,8 @@ button:active {
 .user p:last-child {
     color: #3E4C59;
     font-size: 0.8rem;
+}
+
+img:hover {
+    cursor: pointer;
 }
